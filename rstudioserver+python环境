@@ -42,8 +42,8 @@ install.packages("uuid")
 install.packages("digest")
 选择镜像
  install.packages('BiocManager')
-wget
-install.packages("htmltools_0.5.7.tar.gz", repos = NULL, type = "source")
+#wget
+#install.packages("htmltools_0.5.7.tar.gz", repos = NULL, type = "source")
 
 devtools::install_github('IRkernel/IRkernel')
 
