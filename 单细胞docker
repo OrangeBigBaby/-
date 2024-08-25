@@ -1,1 +1,5 @@
+AUTODL开6006端口
 
+阿里云先改密码
+passwd ecs-user
+sudo usermod -aG sudo ecs-user
