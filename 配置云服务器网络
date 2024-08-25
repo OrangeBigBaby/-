@@ -1,0 +1,20 @@
+[Config] initial configuration directory error=can't initial MMDB: can't download MMDB: Get "https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb": proxyconnect tcp: dial tcp 127.0.0.1:7890: connect: connection refused path=/root/clash
+clash
+#network setting with proxy
+export GIO_EXTRA_MODULES=/usr/lib/x86_64-linux-gnu/gio/modules/
+alias setProxy="gsettings set org.gnome.system.proxy mode 'manual' "
+alias vpn="setProxy &amp;&amp; cd ~/clash/ &amp;&amp;  ./clash -d . &amp;"
+alias vpns="gsettings set org.gnome.system.proxy mode 'auto' "
+
+
+
+gsettings set org.gnome.system.proxy.http host 127.0.0.1
+gsettings set org.gnome.system.proxy.http port 7890 
+gsettings set org.gnome.system.proxy.https host 127.0.0.1
+gsettings set org.gnome.system.proxy.https port 7890
+gsettings set org.gnome.system.proxy.socks host 127.0.0.1
+gsettings set org.gnome.system.proxy.socks port 7891
+
+export http_proxy='http://127.0.0.1:7890'
+export https_proxy='http://127.0.0.1:7890'
+export socks_proxy='http://127.0.0.1:7891'
