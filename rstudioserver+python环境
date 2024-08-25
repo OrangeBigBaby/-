@@ -1,3 +1,4 @@
+jupyter notebook --generate-config
 选择环境（SCVI需要JAX可以提前选）
 一般显卡选3090，或者不选，选多核CPU
 
